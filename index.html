@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="press">Display</button>
+    <div id="blank"></div>
+    <script src="/Backend/script.js">
+      // let button = document.getElementById("press");
+      // button.addEventListener("click", fetchData);
+      // async function fetchData() {
+      //   let totalMarks = 0;
+      //   let totalStudents = 0;
+      //   let passedStudents = 0;
+      //   let failedStudents = 0;
+      //   //fetching the JSON data
+      //   let jsonData = await fetch("users.json");
+      //   //check if the response is ok
+      //   if (!jsonData.ok) throw new Error("Network error" + jsonData.status);
+      //   //parse the JSON data
+      //   let data = await jsonData.json();
+      //   let users = data.students;
+      //   let userDiv = document.getElementById("blank");
+
+      //   //Loop through the users and display them using forEach
+      //   userDiv.innerHTML = "<h2>Students List</h2>";
+      //   users.forEach((user) => {
+      //     totalMarks += user.marks;
+      //     if (user.marks >= 40) {
+      //       user.result = "Pass";
+      //       passedStudents++;
+      //     } else {
+      //       user.result = "Fail";
+      //       failedStudents++;
+      //     }
+      //     totalStudents++;
+      //     userDiv.innerHTML += `<p>${user.roll} ${user.name} - ${user.marks} - ${user.result}</p>`;
+      //   });
+      //   userDiv.innerHTML += `<p>Total Marks: ${totalMarks}</p>`;
+      //   averageMarks = totalMarks / totalStudents;
+      //   userDiv.innerHTML += `<p>Average Marks: ${averageMarks.toFixed(2)}</p>`;
+      //   userDiv.innerHTML += `<p>Total passed students: ${passedStudents}</p>`;
+      //   userDiv.innerHTML += `<p>Total failed students: ${failedStudents}</p>`;
+      //   // //Loop through the users and display them using for (let user of users)
+      //   // for (let user of users) {
+      //   //   userDiv.innerHTML += `<p>${user.id} ${user.name} - ${user.email}</p>`;
+      //   // }
+      // }
+    </script>
+  </body>
+</html>

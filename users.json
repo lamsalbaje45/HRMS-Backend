@@ -1,0 +1,9 @@
+{
+"students": [
+{ "roll": 1, "name": "Anita", "marks": 78 },
+{ "roll": 2, "name": "Bishal", "marks": 34 },
+{ "roll": 3, "name": "Chetan", "marks": 88 },
+{ "roll": 4, "name": "Deepa", "marks": 59 },
+{ "roll": 5, "name": "Ekta", "marks": 29 }
+]
+}
