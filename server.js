@@ -23,23 +23,6 @@ connectDB
     process.exit(1); // Exit the process if connection fails
   }); 
 
-  const seedAdmin = async () => {
-    try {
-        const admin = await Employee.findOne({ email: 'admin@gmail.com' });
-        if (!admin) {
-            const hashedPassword = await bcrypt.hash('admin123', 10); // Hash the password
-            await Employee.create({
-                name: 'Admin',
-                email: 'admin@gmail.com',
-                password: hashedPassword,
-                role: 'admin' // Set the role to admin
-            });
-          }
-    } catch (error) {
-        console.error('Error seeding admin user:', error);
-    }
-  }
-seedAdmin(); // Call the function to seed the admin user
 // Middleware to parse JSON bodies
 app.use(cors({
   origin:'*',
